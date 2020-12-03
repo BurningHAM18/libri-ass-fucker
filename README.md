@@ -4,15 +4,11 @@
 ![screenshot](https://i.imgur.com/7rK2tKq.png) 
 
 ## Why this?
-[They fucked with the wrong person](https://tv.yarn.co/yarn-clip/b3d03c16-d240-43d2-9788-d14baa8d7690).
-
-This is not free culture, this is piracy. 
-
-If you publish a book or a movie for free after 1 year it's free culture, if you do the same after 1 day it's piracy.
-
-On their website there are a ton of ads, shortlink and shit like this.
-
-They say 'we love free culture'? Ok, **let's make culture free again without ads** :) (semi cit.)
+1. [They fucked with the wrong person](https://tv.yarn.co/yarn-clip/b3d03c16-d240-43d2-9788-d14baa8d7690).
+2. This is not free culture, this is piracy. 
+3. If you publish a book or a movie for free after 1 year it's free culture, if you do the same after 1 day it's piracy.
+3. On their website there are a ton of ads, shortlink and shit like this.
+4. They say 'we love free culture'? Ok, **let's make culture free again without ads** :) (semi cit.)
 
 ## Usage
 Just run this, script has a menu with digit like in the 80s, it's "a bit" easy-to-use.
