@@ -1,4 +1,4 @@
-import urllib.request, re, time
+import urllib.request, re, time, os
 from base64 import b64decode as ops
 
 def get_all_authors():
@@ -23,6 +23,8 @@ def dump(authors, sleep_time=2, bformat="epub"):
                 resp = urllib.request.urlopen(req)
                 respData = resp.read()
                 print("Downloaded author page")
+                author_folder = os.path.join(".", "download", author)
+                if not os.path.isdir(author_folder): os.makedirs(author_folder)
 
                 books = re.findall(reg_ex_interno, str(respData))
                 for book in books:
@@ -47,8 +49,8 @@ def dump(authors, sleep_time=2, bformat="epub"):
                                     }
                                 )
                                 definitive_filename = filename.title()
-                                definitive_filename = definitive_filename.replace("Epub", "epub")
-                                out_file = open(definitive_filename, 'wb')
+                                definitive_filename = definitive_filename.replace("Epub", "epub").replace("Pdf", "pdf").replace(".Mobi", ".mobi")
+                                out_file = open(os.path.join(author_folder, definitive_filename), 'wb')
                                 with urllib.request.urlopen(download_url) as response:
                                     print("===============================================================")
                                     print("Downloading! " + definitive_filename)
