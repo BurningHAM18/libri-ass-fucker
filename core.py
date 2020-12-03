@@ -113,7 +113,7 @@ def menu():
                 if ext == "2": bformat = "mobi"
                 elif ext == "3": bformat = "pdf"
                 elif ext == "0": exit(0)
-                else: bformat == "epub"
+                else: bformat = "epub"
                 print("===============================================================") 
                 dump(authors = match, sleep_time=2, bformat=bformat)
             else:
